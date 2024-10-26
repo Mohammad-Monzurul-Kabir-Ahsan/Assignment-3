@@ -23,9 +23,61 @@
 
 <body class="font-manrope">
     <!-- header section -->
-    <header>
+    <header class="bg-gradient-to-b from-gray-100 to-[#FFFFFF]">
         <!-- nav section -->
-        
+        <nav class="lg:max-w-screen-xl px-4 md:px-16 xl:px-24 mx-auto mb-10 md:mb-16 lg:mb-24">
+            <div class="navbar mb-4 md:mb-8 lg:mb-12 flex items-center justify-between">
+                <!-- 1st column -->
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-right rounded-full p-2 -rotate-45 bg-[#ABEF5F]"> </i><a class="text-lg  lg:text-xl xl:text-3 font-extrabold"> Rinterio</a>
+                  </div>
+                <div class="flex">
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-circle lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                    </div>
+                    <ul tabindex="0"class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 2nd column -->
+                <div class="hidden lg:flex">
+                  <ul class="menu menu-horizontal flex">
+                    <li class="font-extrabold text-base text-[#494949]"><a href="#">Home</a></li>
+                    <li class="font-normal text-base text-[#737373]"><a href="#">Services</a></li>
+                    <li class="font-normal text-base text-[#737373]"><a href="#">Portfolio</a></li>
+                    <li class="font-normal text-base text-[#737373]"><a href="#">Blogs</a></li>
+                    <li class="font-normal text-base text-[#737373]"><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <!-- 3rd column -->
+                <div class="hidden lg:flex lg:gap-2">
+                    <div class="bg-white rounded-full lg:p-2 xl:p-3">
+                        <img src="./images/search.png" alt="" class="lg:w-5 xl:w-6 grayscale mx-auto">
+                    </div>
+                    <div class="bg-white rounded-full lg:p-2 xl:p-3">
+                        <img src="./images/shopping-cart.png" alt="" class="lg:w-5 xl:w-6 grayscale mx-auto">
+                    </div>
+                    <button class="bg-[#ABEF5F] w-full md:max-w-max rounded-full px-3 py-2 lg:font-bold xl:font-extrabold lg:text-lg xl:text-xl text-[#1C1C1C]">Book Consult <i class="fa-solid fa-arrow-right bg-[#1C1C1C] text-[#FFFFFF] rounded-full lg:p-1 xl:p-2 -rotate-45"></i></button>
+                </div>
+              </div>
+        </nav>
         <!-- banner setion -->
         <div class="lg:max-w-screen-xl px-4 md:px-16 lg:px-24 mx-auto mb-10 md:mb-16 lg:mb-24">
             <div class="flex flex-col items-center">
@@ -51,7 +103,7 @@
     <main>
         <div class="bg-[#F4F4F4] py-8 md:py-16 lg:py-24">
             <!-- design thoughtful section -->
-            <section class="lg:max-w-screen-xl px-4 md:px-16 lg:px-24 mx-auto mb-10 md:mb-16 lg:mb-24 relative">
+            <section class="lg:max-w-screen-xl px-4 md:px-16 xl:px-24 mx-auto mb-10 md:mb-16 lg:mb-24 relative">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-9 items-center justify-center">
                     <!-- text content section -->
                     <div>
@@ -93,12 +145,12 @@
                         <img src="./images/Rectangle.png" alt="" class="mx-auto h-full w-full">
                     </div>
                 </div>
-                <div class="absolute -top-16 left-14">
+                <div class="absolute -top-16 lg:left-6 xl:left-14">
                     <img src="./images/Vector.png" alt="" class="invisible lg:visible">
                 </div>
             </section>
             <!-- company summary section -->
-            <section class="lg:max-w-screen-xl px-4 md:px-16 lg:px-24 mx-auto mb-10 md:mb-16 lg:mb-24">
+            <section class="lg:max-w-screen-xl px-4 md:px-16 xl:px-24 mx-auto mb-10 md:mb-16 lg:mb-24">
                    <!-- card container -->
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-8 bg-white rounded-3xl">
                         <!-- card 1 -->
@@ -138,7 +190,7 @@
             </section>
             
             <!-- work process section -->
-            <section class="lg:max-w-screen-xl px-4 md:px-16 lg:px-24 mx-auto  relative">
+            <section class="lg:max-w-screen-xl px-4 md:px-16 xl:px-24 mx-auto  relative">
                     <!-- text content section -->
                         <div class="text-center">
                             <button class="bg-white font-bold text-base text-[#494949] py-2 px-4 rounded-full mb-6"><i class="fa-solid fa-arrow-right bg-white rounded-full p-2 "> </i>How we works</button>
@@ -183,7 +235,7 @@
             </section>
         </div>
         <!-- portfolio section -->
-        <section class="lg:max-w-screen-xl px-4 md:px-16 lg:px-24 mx-auto py-8 md:py-16 lg:py-24">
+        <section class="lg:max-w-screen-xl px-4 md:px-16 xl:px-24 mx-auto py-8 md:py-16 lg:py-24">
             <!-- text content section -->
                 <div class="text-center">
                     <button class="bg-[#ABEF5F33] font-bold text-base text-[#494949] py-2 px-4 rounded-full mb-6"><i class="fa-solid fa-arrow-right rounded-full p-2 "> </i> Explore our Latest works</button>
@@ -251,7 +303,7 @@
         </section>
         <!-- article and news section -->
         <div class="bg-[#F4F4F4]">
-            <section class="lg:max-w-screen-xl px-4 md:px-16 lg:px-24 mx-auto py-8 md:py-16 lg:py-24">
+            <section class="lg:max-w-screen-xl px-4 md:px-16 xl:px-24 mx-auto py-8 md:py-16 lg:py-24">
                 <!-- text content section -->
                     <div class="text-center">
                         <button class="bg-[#ABEF5F33] font-bold text-base text-[#494949] py-2 px-4 rounded-full mb-6"><i class="fa-solid fa-arrow-right rounded-full p-2 "> </i> Rinterio News</button>
